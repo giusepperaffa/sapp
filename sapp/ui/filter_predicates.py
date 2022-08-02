@@ -24,7 +24,7 @@ from sqlalchemy.orm.query import Query
 from sqlalchemy.sql.expression import or_
 from typing_extensions import Final
 
-from ..models import DBID
+from models import DBID
 
 if TYPE_CHECKING:
     from .issues import IssueQueryResult  # noqa

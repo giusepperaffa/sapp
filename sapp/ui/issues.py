@@ -13,8 +13,8 @@ from graphql.execution.base import ResolveInfo
 from sqlalchemy import func
 from sqlalchemy.orm import aliased, Session
 
-from ..filter import Filter
-from ..models import (
+from filter import Filter
+from models import (
     DBID,
     Issue,
     IssueInstance,
@@ -24,9 +24,10 @@ from ..models import (
     SharedTextKind,
     SourceLocation,
 )
-from ..queries import get_warning_message
-from ..sarif_types import SARIFResult, SARIFSeverityLevel
-from . import filter_predicates, run
+from queries import get_warning_message
+from sarif_types import SARIFResult, SARIFSeverityLevel
+import filter_predicates
+import run
 
 # pyre-fixme[5]: Global expression must be annotated.
 FilenameText = aliased(SharedText)

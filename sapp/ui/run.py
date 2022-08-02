@@ -9,7 +9,7 @@ import graphene
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import distinct, func
 
-from ..models import (
+from models import (
     DBID,
     Issue,
     IssueInstance,

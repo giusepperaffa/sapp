@@ -11,7 +11,7 @@ from glob import glob
 from pathlib import Path
 from typing import Any, Dict, IO, Iterable, List, NamedTuple, Optional
 
-from .sharded_files import ShardedFile
+from sharded_files import ShardedFile
 
 METADATA_GLOB = "*metadata.json"
 

@@ -10,8 +10,8 @@ from typing import List, Optional
 from sqlalchemy.orm import Query, Session
 from sqlalchemy.sql import func
 
-from .decorators import UserError
-from .models import (
+from decorators import UserError
+from models import (
     DBID,
     IssueInstance,
     IssueInstanceSharedTextAssoc,

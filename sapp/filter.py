@@ -15,7 +15,7 @@ from typing import Any, Dict, List, Optional, Tuple, TYPE_CHECKING, Union
 
 from sqlalchemy import Column, String
 
-from .models import Base
+from models import Base
 
 if TYPE_CHECKING:
     from .ui.schema import FeatureCondition, MatchesIsField

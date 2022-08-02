@@ -39,8 +39,8 @@ from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, Session
 
-from .db import DB
-from .db_support import (
+from db import DB
+from db_support import (
     BIGDBIDType,
     DBID,
     DBIDType,
@@ -50,8 +50,8 @@ from .db_support import (
     PrimaryKeyGeneratorBase,
     RecordMixin,
 )
-from .decorators import classproperty
-from .pipeline import SourceLocation
+from decorators import classproperty
+from pipeline_resources import SourceLocation
 
 log: logging.Logger = logging.getLogger("sapp")
 

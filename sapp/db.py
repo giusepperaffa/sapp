@@ -17,8 +17,8 @@ from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import scoped_session, Session, sessionmaker
 from sqlalchemy.pool import AssertionPool, Pool
 
-from . import errors
-from .decorators import retryable
+import errors
+from decorators import retryable
 
 LOG: logging.Logger = logging.getLogger("sapp")
 

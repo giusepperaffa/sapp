@@ -24,8 +24,8 @@ from typing import (
 
 import xxhash
 
-from ..analysis_output import AnalysisOutput, Metadata
-from . import (
+from analysis_output import AnalysisOutput, Metadata
+from pipeline_resources import (
     DictEntries,
     DictKey,
     Optional,

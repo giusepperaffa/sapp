@@ -23,9 +23,9 @@ from typing import (
 
 import ujson as json
 
-from .. import errors
-from ..analysis_output import AnalysisOutput, Metadata
-from . import (
+import errors
+from analysis_output import AnalysisOutput, Metadata
+from pipeline_resources import (
     flatten_features,
     flatten_features_to_parse_trace_feature,
     ParseConditionTuple,
@@ -38,7 +38,7 @@ from . import (
     ParseTypeInterval,
     SourceLocation,
 )
-from .base_parser import (
+from base_parser import (
     BaseParser,
     EntryPosition,
     log_trace_keyerror_in_generator,

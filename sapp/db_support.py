@@ -29,8 +29,8 @@ from sqlalchemy.engine import Dialect
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import cast
 
-from .db import DB
-from .iterutil import split_every
+from db import DB
+from iterutil import split_every
 
 log: logging.Logger = logging.getLogger("sapp")
 

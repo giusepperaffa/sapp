@@ -39,8 +39,8 @@ from pygments import highlight
 from pygments.formatters import TerminalFormatter
 from pygments.lexers import JsonLexer
 
-from .analysis_output import AnalysisOutput
-from .pipeline.base_parser import BaseParser
+from analysis_output import AnalysisOutput
+from base_parser import BaseParser
 
 
 logger: logging.Logger = logging.getLogger("sapp")
